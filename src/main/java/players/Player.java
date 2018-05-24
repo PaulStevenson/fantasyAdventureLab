@@ -39,6 +39,7 @@ public abstract class Player implements Attackable {
         } else {
             health -= damage;
         }
+        System.out.println(String.format("%s now has %d health", name, health));
     }
 
     @Override

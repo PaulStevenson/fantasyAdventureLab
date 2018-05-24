@@ -22,6 +22,7 @@ public abstract class Warrior extends Player {
     }
 
     public void attack(Attackable attackable) {
+        System.out.println(String.format("%s attacks %s for %d damage", getName(), attackable.getName(), weapon.getDamage()));
         weapon.attack(attackable);
     }
 }
