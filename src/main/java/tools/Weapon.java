@@ -23,6 +23,7 @@ public abstract class Weapon implements IAttack {
 
     @Override
     public void attack(Attackable attackable){
+        attackable.takeDamage(damage);
 
     }
 }
